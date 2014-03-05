@@ -79,6 +79,21 @@
 	}
 }
 
+- (void) testUnreachableCode {
+	bool assertedNonZero = false;
+	long num = random();
+	num |= 0b100;
+	if (num > 0b011)
+		goto fail;
+		goto fail;
+
+	STAssertEquals(num, 0L, @"num is not equal to 0");
+	assertedNonZero = true;
+fail:
+	STAssertTrue(assertedNonZero, @"Did not assert non-zero");
+	NSLog(@"Completed");
+}
+
 - (void) testOverloadedVirtualFunctions {
 	//We can't actually test this in pure Objective-C code. Someone will need to write an Objective-C++ test case class to do it.
 }
