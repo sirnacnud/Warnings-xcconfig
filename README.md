@@ -1,6 +1,6 @@
 # Warnings
 
-This is an xcconfig file to make it easy for you to turn on a large suite of useful warnings in your Xcode project. These warnings catch bugs, so turning them on may identify bugs you can fix now and having them on will prevent bugs later.
+This is an xcconfig file to make it easy for you to turn on [a large suite of useful warnings](https://github.com/boredzo/Warnings-xcconfig/wiki/Warnings-Explained) in your Xcode project. These warnings catch bugs, so turning them on may identify bugs you can fix now and having them on will prevent bugs later.
 
 If you have an existing project you've developed with these warnings enabled, you probably will have a number of warnings after enabling them. Be strong and fix them—they are bugs, so fixing the warnings is fixing bugs.
 
