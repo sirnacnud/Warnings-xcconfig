@@ -2,7 +2,7 @@
 
 This is an xcconfig file to make it easy for you to turn on [a large suite of useful warnings](https://github.com/boredzo/Warnings-xcconfig/wiki/Warnings-Explained) in your Xcode project. These warnings catch bugs, so turning them on may identify bugs you can fix now and having them on will prevent bugs later.
 
-If you have an existing project you've developed with these warnings enabled, you probably will have a number of warnings after enabling them. Be strong and fix them—they are bugs, so fixing the warnings is fixing bugs.
+If you have an existing project you've developed without these warnings turned on, you probably will have a number of warnings after turning them on. These are bugs in your code, newly revealed—fixing the warnings is fixing bugs.
 
 The file also turns on Treat Warnings as Errors—so you can't just ignore warnings; you must fix them in order to be able to build—and the setting to run the Clang Static Analyzer in every build, which will find even more bugs (mostly leaks and crashers).
 
@@ -22,7 +22,7 @@ If you are new to Objective-C, you may find that you encounter build errors more
 
 ### What if you're already using an xcconfig file?
 
-Xcode supports preprocessor directives in xcconfig files, so you can #include the Warnings file from your existing xcconfig file.
+Xcode supports preprocessor directives in xcconfig files, so you can `#include` the Warnings file from your existing xcconfig file.
 
 ## The test project
 
